@@ -1,6 +1,7 @@
 const whiteLamp = document.getElementById('white-lamp');
 const yellowLamp = document.getElementById('yellow-lamp');
 const offOnButton = document.getElementById('button');
+
 const body = document.querySelector('body');
 
 console.log(whiteLamp, yellowLamp, offOnButton);
