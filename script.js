@@ -35,12 +35,14 @@ offOnButton.addEventListener('click', () => {
 
         whiteLamp.className = 'hidden';
         yellowLamp.className = 'active';
+        offOnButton.textContent = 'Spegni';
 
     } else {
 
         whiteLamp.className = 'active';
         yellowLamp.className = 'hidden';
-
+        offOnButton.textContent = 'Accendi';
+        
     }
 
 })
