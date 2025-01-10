@@ -5,21 +5,42 @@ const offOnButton = document.getElementById('button');
 console.log(whiteLamp, yellowLamp, offOnButton);
 
 // Risoluzione esercizio 1 //
-offOnButton.addEventListener('click', () => {
 
-    whiteLamp.className = 'hidden';
-    yellowLamp.className = 'active';
+// offOnButton.addEventListener('click', () => {
 
-})
+//     whiteLamp.className = 'hidden';
+//     yellowLamp.className = 'active';
+
+// })
 
 
 
 // Risoluzione esercizio 2 //
 
-
 // offOnButton.addEventListener('click', () => {
 
+//     whiteLamp.classList.remove('active');
 //     whiteLamp.classList.add('hidden');
 //     yellowLamp.classList.remove('hidden');
     
 // })
+
+
+
+// Bonus //
+
+offOnButton.addEventListener('click', () => {
+
+    if(whiteLamp.className.includes('active')){
+
+        whiteLamp.className = 'hidden';
+        yellowLamp.className = 'active';
+
+    } else {
+
+        whiteLamp.className = 'active';
+        yellowLamp.className = 'hidden';
+
+    }
+
+})
