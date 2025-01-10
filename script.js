@@ -22,7 +22,7 @@ console.log(whiteLamp, yellowLamp, offOnButton);
 //     whiteLamp.classList.remove('active');
 //     whiteLamp.classList.add('hidden');
 //     yellowLamp.classList.remove('hidden');
-    
+
 // })
 
 
@@ -31,7 +31,7 @@ console.log(whiteLamp, yellowLamp, offOnButton);
 
 offOnButton.addEventListener('click', () => {
 
-    if(whiteLamp.className.includes('active')){
+    if (whiteLamp.className.includes('active')) {
 
         whiteLamp.className = 'hidden';
         yellowLamp.className = 'active';
@@ -42,7 +42,7 @@ offOnButton.addEventListener('click', () => {
         whiteLamp.className = 'active';
         yellowLamp.className = 'hidden';
         offOnButton.textContent = 'Accendi';
-        
+
     }
 
 })
